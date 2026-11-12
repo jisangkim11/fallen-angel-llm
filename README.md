@@ -96,15 +96,3 @@ docs/              발표자료 PDF
 | 패널 완성 | `1_data/build_panel_final.py` (LLM 점수 결합) |
 | 3. 예측 모형 평가 | `run_eval.py`, `final_model.py`, `compare_models.py`, `monthly_wf.py` |
 | 4. 전략 백테스트 | `extend_buy_fa.py`, `lifecycle_strategy.py`, `sens_strategy.py` |
-
-각 스크립트는 저장소 최상위 기준으로 `python code/<폴더>/<파일>.py`처럼 실행합니다.
-
-## 실행 환경
-```bash
-pip install -r requirements.txt
-```
-- SEC EDGAR 수집 시 환경변수 `SEC_USER_AGENT`(이름과 연락처)를 설정해야 합니다.
-- LLM 채점은 Kaggle GPU 노트북에서 실행했고, Hugging Face 토큰은 Kaggle Secrets(`HF_TOKEN`)로만 넣습니다.
-
-## 팀
-5조 김지상, 이안드레스, 소유찬
